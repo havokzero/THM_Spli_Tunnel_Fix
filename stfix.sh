@@ -79,10 +79,6 @@ else
   exit 1
 fi
 
-# Start OpenVPN
-echo -e "${YELLOW}Starting OpenVPN...${NC}"
-sudo openvpn --config ~/Documents/thm/havok.ovpn &
-
 # Test TryHackMe VPN connectivity
 echo -e "${YELLOW}Testing TryHackMe VPN connectivity...${NC}"
 sleep 10  # Allow time for OpenVPN to establish the connection
